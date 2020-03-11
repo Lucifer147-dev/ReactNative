@@ -1,0 +1,58 @@
+@import "core/pta";
+
+.inline-price {
+  margin-bottom: 8px;
+}
+
+.image {
+  img { width: 50px; }
+}
+
+.quantity {
+  @include media(phone) {
+    display: none;
+  }
+  vertical-align: center;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.name {
+  @include media(phone) {
+    display: none;
+  }
+}
+
+.name-mobile {
+  @include media(tablet) {
+    display: none;
+  }
+
+  @include media(pc) {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .info {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.price,
+.sub-total {
+  text-align: right !important;
+  vertical-align: middle !important;
+
+  @include media(phone) {
+    display: none;
+  }
+}

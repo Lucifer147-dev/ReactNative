@@ -1,0 +1,52 @@
+@import "../../../core/pta.scss";
+
+.product {
+  margin: 24px 0;
+  display: flex;
+  align-items: flex-start;
+
+  @include media(phone) {
+    flex-direction: column;
+    padding: 12px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.feature {
+  margin: 0 0 16px;
+}
+
+.description {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.image {
+  flex: 0 0 33%;
+  width: 33%;
+  margin: 0 20px 0;
+  @include media(phone) { flex: 0 0 100%; width: 100%; margin: 0 0 12px; }
+}
+
+.info {
+  flex: 1 1 auto;
+}
+
+.dialog-body {
+  background: $white !important;
+  padding: 12px;
+  border-radius: 5px !important;
+}
+
+.dialog {
+  padding: 0 !important;
+  width: 90% !important;
+}
+
+.price {
+  margin-bottom: $pt-grid-size;
+}

@@ -1,0 +1,15 @@
+@import "../core/pta.scss";
+
+.cta {
+  background: $pt-color-gold !important;
+  color: $black !important;
+  font-weight: 400;
+  box-shadow: $pt-elevation-shadow-1 !important;
+  transition: all ease 100ms !important;
+
+  &:hover {
+    // background: rgba($pt-color-gold) !important;
+    box-shadow: $pt-elevation-shadow-2 !important;
+    text-decoration: none !important;
+  }
+}

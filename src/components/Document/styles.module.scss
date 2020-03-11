@@ -1,0 +1,12 @@
+@import "core/pta";
+
+.main {
+  margin: 36px auto;
+  box-shadow: $pt-elevation-shadow-1;
+  padding: 0 36px 36px;
+  width: 100%;
+  // background: $pt-app-background-color;
+
+  @include media(tablet) { margin: 36px 12px; box-shadow: $pt-elevation-shadow-1; }
+  @include media(phone) { margin: 0; padding: 0 12px; }
+}

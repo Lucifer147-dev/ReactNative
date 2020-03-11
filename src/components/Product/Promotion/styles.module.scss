@@ -1,0 +1,21 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: $pt-grid-size !important;
+  justify-items: center;
+  align-items: center;
+  margin: $pt-grid-size 0;
+
+  .text {
+    flex: 1 1 auto;
+    .code {
+      text-transform: uppercase;
+      border-bottom: 2px solid $pt-color-gold;
+    }
+  }
+  .button {
+    flex: 0 0 auto;
+  }
+}

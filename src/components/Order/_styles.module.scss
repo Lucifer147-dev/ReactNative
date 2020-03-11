@@ -1,0 +1,58 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24px;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  @include media(phone) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: $pt-grid-size*4 $pt-grid-size;
+  }
+}
+
+.content {
+  max-width: 500px;
+}
+
+.orderImage {
+  padding: 12px 34px 5px 0px;
+  width: 300px;
+  height: 290px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 0 0 auto;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include media(phone) {
+    margin-right: 0;
+    margin-top: -2 * $pt-grid-size;
+  }
+}
+
+.customerInfo {
+  width: 100%;
+  padding: 0 12px 12px;
+}
+
+.recipient {
+  background: $white;
+  opacity: 0.9;
+  box-shadow: $pt-elevation-shadow-1;
+  padding: 8px;
+  font-weight: 300;
+  font-family: Oswald;
+  line-height: 1.3em;
+}
+
+.recipient .name {
+  font-weight: 400;
+}

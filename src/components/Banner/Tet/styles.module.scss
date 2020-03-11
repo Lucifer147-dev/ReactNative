@@ -1,0 +1,44 @@
+@import "core/pta";
+
+.main {
+  background-color: #bd2626;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $pt-grid-size 2*$pt-grid-size;
+  overflow: hidden;
+
+  .daoTren {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .daoDuoi {
+    z-index: 0;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0.7;
+    left: 0;
+  }
+
+  .title {
+    position: relative;
+    height: 100px;
+  }
+
+  .iconic {
+    position: relative;
+    z-index: 1;
+    height: 200px;
+  }
+
+  @include media(phone) {
+    .title { height: 70px; }
+    .iconic { height: 100px; }
+    .daoDuoi, .daoTren { height: 200px;}
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500&subset=vietnamese");
+@import "core/pta";
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  color: $pt-text-color;
+  background: $dark-gray2;
+}
+
+#root {
+  height: 100%;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+h1 {
+  font-weight: 300 !important;
+  font-family: "Oswald" !important;
+}

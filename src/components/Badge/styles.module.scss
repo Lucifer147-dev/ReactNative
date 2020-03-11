@@ -1,0 +1,40 @@
+@import "core/pta";
+
+.main {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: Oswald;
+  font-weight: 300;
+  display: inline-block;
+
+  @include media(phone) {
+    margin-bottom: 5px;
+  }
+
+  &::before, &::after {
+    content: "";
+    width: 22px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(1px) translateY(-50%);
+    background-repeat: no-repeat;
+    background-image: url(./laurel.svg);
+    background-size: contain;
+    z-index: 1;
+
+    @include media(phone) {
+      width: 11px;
+      height: 22px;
+    }
+  }
+
+  &::before {
+    left: -3*$pt-grid-size;
+  }
+
+  &::after {
+    right: -3*$pt-grid-size;
+    transform: translateY(1px) translateY(-50%) scaleX(-1);
+  }
+}

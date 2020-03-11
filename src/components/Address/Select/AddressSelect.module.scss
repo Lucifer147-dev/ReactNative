@@ -1,0 +1,35 @@
+@import "../../../core/pta.scss";
+
+.control {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: $pt-app-background-color;
+}
+
+.submitAddress {
+  margin-top: 8px;
+}
+
+.radio {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.confirm {
+  padding: 12px;
+}
+
+.fullAddress {
+  border: 1px solid $pt-intent-success;
+}
+
+.selectedAddress {
+  border: 1px solid $pt-intent-success !important;
+  cursor: inherit !important;
+  background-color: $white !important;
+}
+
+.doneIcon {
+  color: map-get($pt-intent-text-colors, "success") !important;
+}

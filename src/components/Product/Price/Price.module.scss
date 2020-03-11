@@ -1,0 +1,19 @@
+@import "../../../core/pta.scss";
+
+.price {
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+.original {
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.discount {
+  font-size: 12px;
+  color: $pt-intent-success;
+  font-weight: bold;
+}

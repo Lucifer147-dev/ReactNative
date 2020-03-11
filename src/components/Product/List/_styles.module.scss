@@ -1,0 +1,15 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1 0 25%;
+  @include media(pc) { flex-basis: 25%; max-width: calc(25% - 1px); }
+  @include media(tablet) { flex-basis: 33.33%; max-width: calc(33.33% - 1px); }
+  @include media(phone) { flex-basis: 50%; max-width: calc(50% - 1px); }
+}

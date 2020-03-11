@@ -1,0 +1,13 @@
+@import "core/pta";
+
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0 $pt-grid-size;
+}
+
+.input {
+  flex: 1 1 90% !important;
+  width: 90% !important;
+}

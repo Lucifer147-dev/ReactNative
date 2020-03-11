@@ -1,0 +1,26 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  width: 100%;
+  margin: 24px 0;
+  padding: 24px;
+  align-items: flex-start;
+  @include media(phone) {
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+.cart {
+  flex: 0 0 auto;
+  margin-right: 36px;
+  @include media(phone) { display: none; }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  flex-direction: column;
+}

@@ -1,0 +1,25 @@
+@import "../../../core/pta.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 12px 0;
+}
+
+.minimal {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.control {
+  background: $pt-app-background-color;
+  border-radius: 5px;
+  margin: 4px 0;
+}
+
+.minimalControl {
+  background: $pt-app-background-color;
+  border-radius: 5px;
+}

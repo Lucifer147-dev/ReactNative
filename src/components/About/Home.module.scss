@@ -1,0 +1,100 @@
+@import "../../core/pta.scss";
+
+.main {
+  padding: $pt-grid-size;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.heading {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-family: Oswald !important;
+  font-weight: 300 !important;
+}
+
+.sub {
+  width: 100%;
+  padding: 40px 120px;
+  font-size: 16px;
+  font-style: oblique;
+  text-align: justify;
+}
+
+@media(max-width: 800px) {
+  .sub {
+    padding: 40px 20px
+  }
+}
+
+.heading>mark {
+  background: none;
+  position: relative;
+}
+
+.heading>mark:after {
+  content: " ";
+  position: absolute;
+  top: 90%;
+  left: 0; right: 0;
+  border-bottom: 5px solid rgba($pt-color-gold, 0.5);
+}
+
+
+.main p>mark {
+  background: rgba($pt-color-gold, 0.5);
+  // padding: 3px 12px;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 30px;
+  text-align: justify;
+  margin: 12px 0;
+  grid-template-columns: 50% 50%;
+}
+
+@media(max-width: 800px) {
+  .grid {
+    display: block;
+  }
+}
+
+.panel {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.cta {
+  width: 100%;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.main p {
+  margin-bottom: 18px;
+}
+
+.main p:after {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: $pt-color-gold;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.badges img {
+  height: 60px;
+  opacity: 0.8;
+}

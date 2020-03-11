@@ -1,0 +1,133 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  @include media(pc) {
+    &.feature {
+      .button {
+        padding-left: 2 * $pt-grid-size;
+        padding-right: 2 * $pt-grid-size;
+      }
+    }
+  }
+
+  &.skeleton {
+    border: 1px solid $white;
+  }
+}
+
+.name {
+  font-family: Oswald;
+  font-size: 22px;
+  font-weight: 300;
+
+  @include media(phone) {
+    font-size: $pt-font-size-large;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+
+  @include media(phone) {
+    flex-direction: column-reverse;
+  }
+}
+
+.price {
+  margin-bottom: 0.5 * $pt-grid-size;
+
+  @include media(phone) {
+    font-size: $pt-font-size-small;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tooltip {
+  text-align: center;
+}
+
+.tooltipName {
+  color: $pt-color-gold;
+}
+
+.button {
+  .top {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .imageContainer {
+      height: 0;
+      overflow: visible;
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+
+      .image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .feature {
+      @include media(phone) {
+        display: none;
+      }
+      @include media(tablet) {
+        display: none;
+      }
+      @include media(pc) {
+        flex: 1 0 50%;
+        width: 50%;
+        align-items: flex-start;
+        padding: 36px 12px 0;
+
+        .text {
+          text-align: left;
+          font-size: $pt-font-size-small;
+          max-width: 90%;
+          margin: auto;
+        }
+
+        & + .imageContainer {
+          width: 50%;
+          padding-bottom: 50%;
+        }
+      }
+    }
+  }
+
+  .code {
+    font-size: 10px;
+    padding: 1px 3px;
+    position: absolute;
+    word-break: keep-all;
+    left: 100%;
+    text-transform: uppercase;
+
+    @include media(phone) {
+      position: relative;
+      display: block;
+      left: inherit;
+    }
+  }
+}

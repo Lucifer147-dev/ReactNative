@@ -1,0 +1,54 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 24px 0;
+  width: 180px;
+  path { fill: white; }
+  @include media(phone) { display: none; }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .item {
+    font-weight: 400;
+    font-family: Oswald;
+    text-transform: uppercase !important;
+  }
+
+  @include media(phone) { display: none; }
+}
+
+.navbar {
+  box-shadow: none !important;
+}
+
+.topNav {
+  position: relative;
+  background: $dark-gray2 !important;
+  box-shadow: none !important;
+  @include media(phone) { display: none; }
+}
+
+.topNavContainer {
+  max-width: 1012px;
+  margin: auto;
+}
+
+
+.mobile {
+  background: $dark-gray2 !important;
+}

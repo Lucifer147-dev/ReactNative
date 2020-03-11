@@ -1,0 +1,15 @@
+@import "core/pta";
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-family: Oswald;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}

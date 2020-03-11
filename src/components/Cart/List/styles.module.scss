@@ -1,0 +1,26 @@
+@import "core/pta";
+
+.main {
+  width: 100%;
+}
+
+.thead, .price, .subTotal, .total, .action {
+  @include media(phone) { display: none; }
+}
+
+.totalMobile {
+  @include media(tablet) { display: none; }
+  @include media(pc) { display: none; }
+}
+
+.voucher { text-transform: uppercase }
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkoutButton {
+  margin-top: 10px;
+}
